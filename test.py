@@ -18,7 +18,7 @@ firefox_options = Options()
 driver = webdriver.Firefox(service=service, options=firefox_options)
 
 # Step 1: Open the login page
-driver.get("http://lynne.infinityfreeapp.com/login.php")
+driver.get("your site URL")
 
 # Step 2: Locate the login form elements
 username_field = driver.find_element(By.NAME, "email")  # Update 'email' to the correct name attribute
@@ -26,7 +26,7 @@ password_field = driver.find_element(By.NAME, "password")  # Update 'password' t
 sign_in_button = driver.find_element(By.NAME, "submit")  # Update to the correct button name
 
 # Step 3: Interact with the form elements
-username_field.send_keys("karenrotich97@gmail.com")  # Replace with your test username
+username_field.send_keys("test@mail.com")  # Replace with your test username
 password_field.send_keys("123456")  # Replace with your test password
 sign_in_button.click()  # Click the sign-in button
 
